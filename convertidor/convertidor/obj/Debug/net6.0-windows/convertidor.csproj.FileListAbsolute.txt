@@ -1,0 +1,16 @@
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\bin\Debug\net6.0-windows\convertidor.exe
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\bin\Debug\net6.0-windows\convertidor.deps.json
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\bin\Debug\net6.0-windows\convertidor.runtimeconfig.json
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\bin\Debug\net6.0-windows\convertidor.dll
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\bin\Debug\net6.0-windows\convertidor.pdb
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.Form1.resources
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.csproj.GenerateResource.cache
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.AssemblyInfoInputs.cache
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.AssemblyInfo.cs
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.csproj.CoreCompileInputs.cache
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.dll
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\refint\convertidor.dll
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.pdb
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\convertidor.genruntimeconfig.cache
+C:\Users\heber\Downloads\Vs code\convertidor\convertidor\obj\Debug\net6.0-windows\ref\convertidor.dll
