@@ -20,9 +20,9 @@ def convert_faren():
 
 
 App = tk.Tk()
-App.title("Conversor de Temperatura")
+App.title("Volumenes")
 
-labell = tk.Label(App,text ="Fahrenheit:")
+labell = tk.Label(App,text ="volumenes de un cilindro")
 labell.grid(row=0, column=0)
 
 entry1 = tk.Entry(App)
