@@ -23,20 +23,33 @@ def guardar_datos():
     telefono = entry_telefono.get()
 
     genero = ""
+    def es_entero_valido(cadena):
+        return cadena.isdigit()
+
+    def es_decimal_valido(cadena):
+        try:
+            float(cadena)
+            return True
+        except ValueError:
+            return False
+
+    def es_cadena_valida(cadena):
+        return cadena.isalpha()
+
     if var_genero.get() == 1:
         genero = "Hombre"
     elif var_genero.get() == 2:
         genero = "Mujer"
 
-    # Crear un cadena de datos
-    datos = "Nombres:" + nombres + "\nApellidos" + apellidos + "\nEdad" + edad + "años\nEstatura" + estatura + "cm\nTelefono" + telefono + "\nGenero" + genero
+    if (es_entero_valido(edad) and es_decimal_valido(estatura) and es_entero_valido(telefono) and es_cadena_valida(nombres) and es_cadena_valida(apellidos)):
+        datos = f"Nombres: {nombres}\nApellidos: {apellidos}\nEdad: {edad} años\nEstatura: {estatura} cm\nTelefono: {telefono}\nGenero: {genero}"
 
-    # Guardar los datos en un archivo de texto
-    with open("Formulario.txt", "a") as archivo:
-        archivo.write(datos + "\n\n")
+        # Guardar los datos en un archivo de texto
+        with open("Formulario.txt", "a") as archivo:
+            archivo.write(datos + "\n\n")
 
-    # Mostrar un mensaje con los datos capturados
-    messagebox.showinfo("informacion", "Datos guardados con exito:\n\n" + datos)
+        # Mostrar un mensaje con los datos capturados
+        messagebox.showinfo("informacion", "Datos guardados con exito:\n\n" + datos)
 
     # Limpiar los controles despues de guardar
     entry_nombres.delete(0, tk.END)
