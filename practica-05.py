@@ -60,9 +60,10 @@ def guardar_datos():
     var_genero.set(0, tk.END)
 
 
-# Crear la ventana principal
-ventana = tk.Tk()
-ventana.title("Formulario")
+
+ventana = tk.Tk() 
+ventana.title("Formulario") 
+ventana.geometry("320x340")
 
 # Crear variables para los RadioButtons
 var_genero = tk.IntVar()
