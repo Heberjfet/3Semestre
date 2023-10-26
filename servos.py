@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import Scale
 
 # Configura la conexión serial con el Arduino (ajusta el puerto según sea necesario)
-ser = serial.Serial('COM3', 9600)  # Cambia 'COM3' al puerto correcto
+ser = serial.Serial('COM8', 9600)  # Cambia 'COM3' al puerto correcto
 
 # Función para enviar el valor del slider al Arduino
 def enviar_valor(valor):
