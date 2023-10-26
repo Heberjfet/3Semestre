@@ -1,0 +1,10 @@
+C:\Users\heber\Downloads\AR\Practica08\Practica08\obj\Debug\Practica08.csproj.AssemblyReference.cache
+C:\Users\heber\Downloads\AR\Practica08\Practica08\obj\Debug\Practica08.Properties.Resources.resources
+C:\Users\heber\Downloads\AR\Practica08\Practica08\obj\Debug\Practica08.csproj.GenerateResource.cache
+C:\Users\heber\Downloads\AR\Practica08\Practica08\obj\Debug\Practica08.csproj.CoreCompileInputs.cache
+C:\Users\heber\Downloads\AR\Practica08\Practica08\bin\Debug\Practica08.exe.config
+C:\Users\heber\Downloads\AR\Practica08\Practica08\bin\Debug\Practica08.exe
+C:\Users\heber\Downloads\AR\Practica08\Practica08\bin\Debug\Practica08.pdb
+C:\Users\heber\Downloads\AR\Practica08\Practica08\obj\Debug\Practica08.Form1.resources
+C:\Users\heber\Downloads\AR\Practica08\Practica08\obj\Debug\Practica08.exe
+C:\Users\heber\Downloads\AR\Practica08\Practica08\obj\Debug\Practica08.pdb
