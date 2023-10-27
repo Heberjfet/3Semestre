@@ -2,6 +2,7 @@
 import sympy as sp
 import matplotlib.pyplot as plt
 import numpy as np
+
 def obtener_polinomio(x, y):
     local_diferencias_divididas = diferencias_divididas(x, y)
     n = len(x)
@@ -58,10 +59,8 @@ print(f"El polinomio de interpolación simplificado es: P(x) = {polinomio_interp
 x_sym = sp.symbols('x')
 polinomio_lambda = sp.lambdify(x_sym, polinomio_interpolacion, 'numpy')
 
-# Aquí comienza la gráfica y la sustitición de valores
 x_vals = np.linspace(min(x), max(x), 400)
 y_vals = [polinomio_lambda(x_val) for x_val in x_vals]
-3
 plt.figure()
 plt.plot(x_vals, y_vals, label=f'P(x) = {polinomio_interpolacion}')
 plt.scatter(x, y, color='red', label='Datos de entrada')
