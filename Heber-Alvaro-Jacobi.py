@@ -32,3 +32,5 @@ for i in range(len(x)):
     print("x{} = {:.6f}".format(i+1, x[i]))
 
 print("Número total de iteraciones realizadas:", iteraciones)
+
+input()
