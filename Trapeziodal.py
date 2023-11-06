@@ -17,3 +17,5 @@ plt.fill_between(x, y, 0, alpha=0.2)
 area = np.trapz(y, x)
 
 print("El área bajo la curva es:", area)
+
+input("Pulse enter para cerrar la ventana: ")
