@@ -1,5 +1,6 @@
 import sympy as sp
 
+
 A, B = sp.symbols('a b')
 while True:
     try:
@@ -22,3 +23,4 @@ for i in range(n + 1):
     b_i = (b_0 + (h * f(a_0, b_0)))
     a_0 += h
     b_0 = b_i
+    
