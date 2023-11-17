@@ -1,26 +1,35 @@
-import sympy as sp
+import numpy as np
+import matplotlib.pyplot as plt
 
+def f(x, y):
+    return 0.1 * np.sqrt(y) + 0.4 * x**2
 
-A, B = sp.symbols('a b')
-while True:
-    try:
-        func = input("Ingrese la diferencial en términos de A, B: ")
-        function = sp.sympify(func)
-        break
-    except ValueError:
-        pass
-f = sp.lambdify((A, B), function)
-a_0 = float(input("Ingrese el valor de a_0: "))
-b_0 = float(input("Ingrese el valor de b_0: "))
-a_f = float(input("Ingrese el valor de a_f: "))
-n = int(input("Ingrese el número de intervalos: "))
-h = (a_f - a_0) / n
-print(h)
-b_i = 0  # Cambié yi a b_i
-print("||   A  ||    B    ||   f(a,b)   ||")
-for i in range(n + 1):
-    print("|| "+"{:.2f}".format(a_0)+" ||  "+"{:.3f}".format(b_0)+"  ||    "+"{:.3f}".format(f(a_0, b_0))+"   ||")
-    b_i = (b_0 + (h * f(a_0, b_0)))
-    a_0 += h
-    b_0 = b_i
-    
+def euler_method(x0, y0, h, num_iterations):
+    x_values = [x0]
+    y_values = [y0]
+
+    for _ in range(num_iterations):
+        x = x_values[-1]
+        y = y_values[-1]
+        y_new = y + h * f(x, y)
+        x_values.append(x + h)
+        y_values.append(y_new)
+
+    return x_values, y_values
+
+x0 = 2
+y0 = 4
+h = float(input('ingrese el valor de h: '))
+
+num_iterations = int(input('ingrese el numero de iteraciones: '))
+
+x_values, y_values = euler_method(x0, y0, h, num_iterations)
+
+for i in range(num_iterations + 1):
+    print(f"Iteración {i}: x = {x_values[i]:.2f}, y = {y_values[i]:.4f}")
+
+plt.plot(x_values, y_values, marker='o')
+plt.title('Solución mediante el Método de Euler')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
